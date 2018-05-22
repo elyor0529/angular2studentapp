@@ -1,0 +1,27 @@
+﻿@{
+  ViewData["Title"] = "Student List";
+}
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <my-app>
+                <h3>Loading...</h3>
+            </my-app>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        System.config({
+            packages: {
+                'app': { defaultExtension: 'js' },
+                'lib': { defaultExtension: 'js' }
+            }
+        });
+
+        System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+}

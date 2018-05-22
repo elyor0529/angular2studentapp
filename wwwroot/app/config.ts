@@ -1,0 +1,1 @@
+﻿export var API_URL: string = "/student";
